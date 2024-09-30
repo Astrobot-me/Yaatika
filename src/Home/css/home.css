@@ -1,3 +1,123 @@
 body{
     font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 400px;
+}
+.text-content {
+    padding-right: 20px;
+}
+.explore {
+    color: #0077be;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.explore::before {
+    content: '🌍';
+    margin-right: 5px;
+}
+
+h1 span {
+    color: #00a8e8;
+}
+.s1-para {
+    color: #666;
+    line-height: 1.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.s1-buttons {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 10px;
+}
+.btn {
+    padding: 15px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+.btn-primary {
+    background-color: #00a8e8;
+    color: white;
+}
+.btn-secondary {
+    background-color: #e6f7ff;
+    color: #00a8e8;
+}
+.btn::before {
+    margin-right: 5px;
+}
+.btn-primary::before {
+    content: '▶';
+}
+.btn-secondary::before {
+    content: '👁';
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    height: 100%;
+}
+.image-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.image-card:nth-child(1) {
+    background-image: url(https://media.istockphoto.com/id/1027228942/photo/rishikesh-in-india.jpg?s=612x612&w=0&k=20&c=dPAQ5YxCUvzg-WY0T8T0gPi1yOKsHmt05NZp71cUgO4=);
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.image-card:nth-child(2) {
+    background-image: url(https://media.istockphoto.com/id/539105384/photo/kedarnath-in-india.jpg?s=612x612&w=0&k=20&c=0nK5I_7HUWn3VOuHyWxGc7_eJilZY1Wa975eA_FKdB8=);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.image-card:nth-child(3) {
+    background-image: url(https://media.istockphoto.com/id/1423622562/video/dense-forest-of-jim-corbett-national-park.jpg?s=640x640&k=20&c=f0SK9Q35EKvRtd0bEpQqUJiD92zU9BXUK_bS8jdBanQ=);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.badge {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.badge-dark {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    bottom: 10px;
+    left: 10px;
+}
+.badge-light {
+    background-color: white;
+    color: #333;
+    top: 10px;
+    right: 10px;
 }

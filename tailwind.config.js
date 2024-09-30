@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'trajan':['Trajan Pro',"sans-serif"]
+        'trajan':['Trajan Pro',"sans-serif"],
+        'arial':['Arial','Helvetica']
       }
     },
   },

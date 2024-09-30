@@ -9,63 +9,126 @@
     <link rel="stylesheet" href="../output.css">
 </head>
 
-<body class="font-trajan " style="height: 100vh; width: 100vw; margin: 0; padding: 0;">
+<body class="font-trajan overflow-x-hidden " style="height: 100vh; width: 100vw; margin: 0; padding: 0; ">
 
     <!-- Hero section -->
-    <div style="width: 100vw; height: 100vh; background: white; display: flex; justify-content: center; align-items: center;">
+
+    <div class="w-screen h-auto bg-white flex flex-col justify-center items-center">
         <!-- Main Container -->
-        <div style="position: relative; width: 100%; height: 100%; display: flex; flex-direction: column;">
+        <div class="relative w-full h-screen flex flex-col">
             <!-- Background Image -->
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <img style="width: 100%; height: 100%; object-fit: cover;" src="../../assets/background/bg-aspect.jpg" />
+            <div class="absolute top-0 left-0 w-full h-full">
+                <img class="w-full h-full object-cover" src="../../assets/background/bg-aspect.jpg" />
             </div>
-    
+
             <!-- Top Bar Container (Logo, Navigation, Search) -->
-            <div style="position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; padding: 20px 36px;">
+            <div class="relative z-10 flex justify-between items-center p-5 md:p-8">
                 <!-- Logo -->
-                <div style="display: flex;">
-                    <img style="width: 257.02px; height: 86px;" src="../../assets/logo/v5_33.png">
+                <div>
+                    <img class="w-64 h-24" src="../../assets/logo/v5_33.png">
                 </div>
-    
+
                 <!-- Navigation Menu -->
-                <div style="display: flex; gap: 89px; align-items: center;">
-                    <div style="color: black; font-size: 20px;   font-weight: 500; letter-spacing: 2px;">Home</div>
-                    <div style="color: black; font-size: 20px;   font-weight: 500; letter-spacing: 2px;">Experience</div>
-                    <div style="color: black; font-size: 20px;   font-weight: 500; letter-spacing: 2px;">Plan</div>
-                    <div style="color: black; font-size: 20px;   font-weight: 500; letter-spacing: 2px;">Trade</div>
+                <div class="flex gap-8 space-x-10 text-xl  items-center">
+                    <div class="text-black tracking-widest font-medium">Home</div>
+                    <div class="text-black tracking-widest font-medium">Experience</div>
+                    <div class="text-black tracking-widest font-medium">Plan</div>
+                    <div class="text-black tracking-widest font-medium">Trade</div>
                 </div>
-    
+
                 <!-- Search Button -->
-                <div style="display: flex;">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" style="background-color: whitesmoke; border-radius: 20px; padding: 5px;" class="cursor-pointer" />
+                <div class="flex gap-2 cursor-pointer bg-white rounded-full p-1">
+                    <input class="w-18 px-2 rounded-l-full " type="text" name="" id="">
+                    <img class="w-7 p-1" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1">
                 </div>
             </div>
-    
+
             <!-- Main Content (Title, Explore Button, Blur Effect) -->
-            <div style="position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-grow: 1;">
+            <div class="relative z-10 flex flex-col items-center justify-center flex-grow">
                 <!-- Title: Uttarakhand -->
-                <p class="font-xl">Welcome to</p>
-                <div style="color: #203C56; font-size: 84px;   font-weight: 400; letter-spacing: 6.40px; margin-bottom: 20px;">
-                    Uttrakhand
+                <p class="text-2xl md:text-3xl mb-2">Welcome to</p>
+                <div class="text-primary text-5xl md:text-7xl font-normal tracking-widest mb-5 ">
+                    Uttarakhand
                 </div>
-    
+
                 <!-- Explore Button Container -->
-                <div style="position: relative;">
+                <div class="relative">
                     <!-- Explore Button -->
-                    <div style="display: flex; justify-content: center; align-items: center; width: 240px; height: 66px; background: rgba(246, 246, 247, 0.80); border-radius: 20px; padding: 8px 16px; cursor: pointer;">
-                        <div style="color: black; font-size: 24px; font-weight: 500;">Explore</div>
+                    <div
+                        class="flex justify-center items-center w-60 h-16 bg-opacity-80 bg-gray-200 rounded-xl px-4 py-2 cursor-pointer">
+                        <div class="text-black text-2xl font-medium">Explore</div>
                     </div>
-                    
+
                     <!-- Blur Effect Box -->
-                    <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 262px; height: 51px; filter: blur(24px); box-shadow: 24px 24px 24px;">
+                    <div class="absolute top-5 left-1/2 transform -translate-x-1/2 w-64 h-12 filter blur-lg shadow-lg">
                     </div>
                 </div>
+            </div>
+
+            <div
+                class="absolute flex items-center justify-center divide-x-0 px-2 py-3 gap-7 divide-blue-50 left-0 bottom-0 w-[33%] h-14  bg-white/80 font-semibold text-black">
+                <span  class="hover:text-gray-800">Heritage</span>
+                <span class="hover:text-gray-800">Spirituality</span>
+                <span class="hover:text-gray-800">Nature</span>
+
             </div>
         </div>
-    </div>
-    
-    <!--  -->
-    
+
+        <!-- Info Section -->
+        <section class="w-full h-auto ">
+            <div class="container mt-14 mb-5 mx-auto px-10">
+                <div class="flex flex-col justify-around text-content">
+                    <div>
+                        <h1 class="text-5xl font-sans font-bold">Explore the <span>Heaven</span> of Earth!</h1>
+                        <p class="s1-para mt-3 font-arial">Immerse yourself in a world of wanderlust with our curated
+                            travel experiences. From breathtaking
+                            landscapes to cultural gems, embark on unforgettable adventures</p>
+                    </div>
+                    <div class="s1-buttons">
+                        <a href="#" class="btn btn-primary ">Get Info</a>
+                        <a href="#" class="btn btn-secondary">Book a trip</a>
+                    </div>
+                </div>
+                <div class="image-grid">
+                    <div class="image-card">
+                        <span class="badge badge-dark">✈ Popular</span>
+                    </div>
+                    <div class="image-card">
+                        <span class="badge badge-light">🏆 Top Places</span>
+                    </div>
+                    <div class="image-card">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full h-auto">
+            <div class="max-w-4xl w-full mx-auto bg-white rounded-3xl overflow-hidden shadow-lg">
+                <div class="p-8 sm:p-10">
+                    <div class="text-rose-500 font-bold mb-2">About —</div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">We Recommend Beautiful Destinations
+                        Every Month</h2>
+                    <p class="text-gray-600 mb-8">Let's chose your dream destinations. Here we provide many destinations
+                        and we offer the best destinations every week.</p>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-gray-800">2000+</div>
+                            <div class="text-sm text-gray-600">Our Explorers</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-gray-800">100+</div>
+                            <div class="text-sm text-gray-600">Destinations</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl text-center">
+                            <div class="text-2xl font-bold text-gray-800">20+</div>
+                            <div class="text-sm text-gray-600">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 </body>
 
 </html>
