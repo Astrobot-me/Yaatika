@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instruction {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: #ff6600;
+}
+
+.circuits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.circuit-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    img{
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+     }   
+
+
+.ramayana { background-image: url('panchkedar.png'); }
+.sufi-kabir { background-image: url('chardham.png'); }
+.bundelkhand { background-image: url('wildlife.png'); }
+.jain { background-image: url('waterfall.png'); }
+.krishna-braj { background-image: url('rafting.png'); }
+.shakti-peeth { background-image: url('caving.png'); }
+.mahabharata { background-image: url('mountain.png'); }
+.wildlife { background-image: url('gem.png'); }
+.swantantrata { background-image: url('locals.png'); }
+.aadhyatmik { background-image: url('villages.png'); }

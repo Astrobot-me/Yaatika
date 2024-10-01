@@ -1,0 +1,125 @@
+
+body{
+    background-color: none;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* left part */
+.leftside{
+    background-color: none;
+    color: black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+    
+}
+.headleft{
+    flex: 1;
+    display: flex;
+    background-color: none;
+    
+}
+.contentleft{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.spiritual{
+display: flex;
+background-color: white;
+justify-content: space-between;
+flex: 1;
+}
+.panchkedar{
+    background-color: white;
+    flex: 1;
+}
+.chardham{
+    background-color: white;
+     flex: 1;
+}
+.nature{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex: 1;
+    }
+    .wildlife{
+        background-color:white;
+        flex: 1;}
+    .waterfall{
+        background-color:  white;
+        flex: 1;}
+.nature{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex: 1;
+    }
+    .wildlife{
+        background-color:white;
+        flex: 1;}
+    .waterfall{
+        background-color:  white;
+        flex: 1;}
+
+ .adventure{
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        flex: 1;
+        }
+        .sporting{
+            background-color:white;
+            flex: 1;}
+        .caving{
+            background-color:  white;
+            flex: 1;}
+.mountains{
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            flex: 1;
+            }
+            .hillstation{
+                background-color:white;
+                flex: 1;}
+            .hiddengems{
+                background-color:  white;
+                flex: 1;}
+               
+
+.culture{
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            flex: 1;
+            }
+            .locals{
+                background-color:white;
+                flex: 1;}
+            .villages{
+                background-color:  white;
+                flex: 1;}
+              
+ img{
+    height: 70px;
+    width: 70px;
+    border-radius: 25px;
+ }       
+
+
+
+
+/* right part */
+.rightside{
+    background-color: pink;
+    flex: 1;
+    display: flex;
+}
