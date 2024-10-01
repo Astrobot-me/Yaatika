@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="../output.css">
 </head>
 
 <body class="font-trajan overflow-x-hidden " style="height: 100vh; width: 100vw; margin: 0; padding: 0; ">
 
+    
+    
     <!-- Hero section -->
 
     <div class="w-screen h-auto bg-white flex flex-col justify-center items-center">
@@ -29,17 +31,19 @@
                 </div>
 
                 <!-- Navigation Menu -->
-                <div class="flex gap-8 space-x-10 text-xl  items-center">
-                    <div class="text-black tracking-widest font-medium">Home</div>
-                    <div class="text-black tracking-widest font-medium">Experience</div>
-                    <div class="text-black tracking-widest font-medium">Plan</div>
-                    <div class="text-black tracking-widest font-medium">Trade</div>
+                <div class="flex gap-8 space-x-10 text-xl  items-center ">
+                    <div class="text-black tracking-widest font-medium  underline ">Home</div>
+                    <div class="text-black tracking-widest font-medium  ">Experience</div>
+                    <div class="text-black tracking-widest font-medium  "><a href="../Plan/index.html">Plan</a></div>
+                    <div class="text-black tracking-widest font-medium  ">Trade</div>
                 </div>
 
                 <!-- Search Button -->
                 <div class="flex gap-2 cursor-pointer bg-white rounded-full p-1">
-                    <input class="w-18 px-2 rounded-l-full " type="text" name="" id="">
-                    <img class="w-7 p-1" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1">
+                    <input class="w-18 px-2 rounded-l-full " type="text" name="" id="searchbox"  >
+                    <img class="w-7 p-1" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" id="searchbtn"  onclick=handleSearchbar()>
+
+                    <div class="results-container" id="results"></div>
                 </div>
             </div>
 
@@ -66,10 +70,10 @@
             </div>
 
             <div
-                class="absolute flex items-center justify-center divide-x-0 px-2 py-3 gap-7 divide-blue-50 left-0 bottom-0 w-[33%] h-14  bg-white/80 font-semibold text-black">
-                <span  class="hover:text-gray-800">Heritage</span>
-                <span class="hover:text-gray-800">Spirituality</span>
-                <span class="hover:text-gray-800">Nature</span>
+                class="absolute flex items-center justify-center divide-x-0 px-2 py-3 gap-7 divide-blue-50 left-0 bottom-0 w-[33%] h-14  bg-white/80 font-semibold text-black z-10 cursor-pointer  ">
+                <span class="hover:text-gray-600">Heritage</span>
+                <span class="hover:text-gray-600">Spirituality</span>
+                <span class="hover:text-gray-600">Nature</span>
 
             </div>
         </div>
@@ -104,9 +108,9 @@
         </section>
 
         <section class="w-full h-auto">
-            <div class="max-w-4xl w-full mx-auto bg-white rounded-3xl overflow-hidden shadow-lg">
-                <div class="p-8 sm:p-10">
-                    <div class="text-rose-500 font-bold mb-2">About —</div>
+            <div class=" w-full mx-auto bg-white rounded-3xl overflow-hidden shadow-lg">
+                <div class="p-8 sm:p-10 font-arial ">
+                    <div class="text-[#00a8e8] font-bold mb-2">About —</div>
                     <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">We Recommend Beautiful Destinations
                         Every Month</h2>
                     <p class="text-gray-600 mb-8">Let's chose your dream destinations. Here we provide many destinations
@@ -129,6 +133,21 @@
             </div>
 
         </section>
+
+        <!-- Start of ChatBot (www.chatbot.com) code -->
+        <script defer>
+            window._ow = window._ow || {};
+            window.__ow.organizationId = "455d64af-9439-4e5c-a677-2981461a4d04";
+            window.__ow.template_id = "4f56a2b9-b0eb-4f57-a977-6f64d8bfb578";
+            window.__ow.integration_name = "manual_settings";
+            window.__ow.product_name = "chatbot";
+            ; (function (n, t, c) { function i(n) { return e.h ? e._h.apply(null, n) : e._q.push(n) } var e = { _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[OpenWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () { var n = t.createElement("script"); n.async = !0, n.type = "text/javascript", n.src = "https://cdn.openwidget.com/openwidget.js", t.head.appendChild(n) } }; !n._ow.asyncInit && e.init(), n.OpenWidget = n.OpenWidget || e }(window, document, [].slice))
+        </script>
+        <script src="script.js" ></script>
+        <noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/"
+                rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a
+                href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript>
+        <!-- End of ChatBot code -->
 </body>
 
 </html>

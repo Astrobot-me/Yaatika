@@ -2,7 +2,25 @@ body{
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
 }
-
+.results-container {
+    display: none;
+    position: absolute;
+    top: 100px;
+    background-color: rgba(255, 255, 255, 0.554);
+    border: 1px solid #ccc;
+    width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+    z-index: 1000;
+}
+.result-item {
+    padding: 10px;
+    cursor: pointer;
+}
+.result-item:hover {
+    background-color: #f1f1f1;
+}
 * {
     margin: 0;
     padding: 0;

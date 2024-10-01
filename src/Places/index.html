@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../Home/css/home.css">
+</head>
+<body class="w-full h-auto">
+    <!-- Navbar -->
+    <div class="relative z-10 flex font-trajan justify-between items-center p-5 md:p-8 bg-sky-400">
+        <!-- Logo -->
+        <div>
+            <a href="../Home/index.html" class="cursor-pointer" target="_blank"><img class="w-38 h-12" src="../../assets/logo/v5_33.png"></a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="flex gap-8 space-x-10 text-xl font-semibold items-center ">
+            <div class="text-black tracking-widest font-medium hover:text-blue-950  ">Home</div>
+            <div class="text-black tracking-widest font-medium hover:text-blue-950 ">Experience</div>
+            <div class="text-black tracking-widest font-medium hover:text-blue-950 ">Plan</div>
+            <div class="text-black tracking-widest font-medium  hover:text-blue-950">Trade</div>
+        </div>
+
+        <!-- Search Button -->
+        <div class="flex gap-2 cursor-pointer bg-white rounded-full p-1">
+            <input class="w-18 px-2 rounded-l-full " type="text" name="" id="searchbox"  >
+            <img class="w-7 p-1" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" id="searchbtn"  onclick=handleSearchbar()>
+
+            <div class="results-container" id="results"></div>
+        </div>
+    </div>
+    <section class="w-full h-auto flex ">
+        <div class="w-[15%]  border h-auto"></div>
+        <div class="w-[85%] flex flex-col flex-wrap items-center p-2 py-5 gap-5 border-l border-black" id="cards">
+
+        </div>
+    </section>
+    <script src="../Home/script.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
