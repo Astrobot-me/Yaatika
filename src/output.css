@@ -1230,3 +1230,174 @@ video {
     line-height: 1;
   }
 }
+
+
+
+.container2 {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+}
+
+/* Header styles */ 
+.head {
+  font-size: larger;
+  height: 20%;
+}
+
+/* Content styles */
+.content {
+  flex: 90%;
+}
+
+/* Instruction text styles */
+.instruction {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Title and highlight styles */
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #ff6600;
+}
+
+/* Circuits grid styles */
+.circuits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Circuit item and icon styles */
+.circuit-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Icon styles */
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ramayana>img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+/* Specific icon background images */
+.ramayana { background-image: url('panchkedar.png'); }
+.sufi-kabir { background-image: url('chardham.png'); }
+.bundelkhand { background-image: url('wildlife.png'); }
+.jain { background-image: url('waterfall.png'); }
+.krishna-braj { background-image: url('rafting.png'); }
+.shakti-peeth { background-image: url('caving.png'); }
+.mahabharata { background-image: url('mountain.png'); }
+.wildlife { background-image: url('gem.png'); }
+.swantantrata { background-image: url('locals.png'); }
+.aadhyatmik { background-image: url('villages.png'); }
+
+/* Link styles */
+.circuit-item a {
+  text-decoration: none;  /* Remove underline from the links */
+  color: inherit;         /* Ensure the link color inherits from the parent text color */
+  display: flex;          /* Ensure the link expands to the size of the icon */
+  align-items: center;    /* Vertically align the link content */
+}
+
+.circuit-item a:hover {
+  opacity: 0.8;           /* Slight hover effect */
+}
+
+
+
+
+
+.footer {
+  margin-top: 20px;
+  background-color: #2c2c2c;
+  color: #ffa500;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  border-bottom: 1px solid #ffa500;
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li:before {
+  content: "▶ ";
+  color: #ffa500;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}
+
+.feedback-button {
+  background-color: #ffa500;
+  color: #2c2c2c;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  float: right;
+}
+
+
+
