@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,20 @@
     <link rel="stylesheet" href="../output.css">
     <link rel="stylesheet" href="../Home/css/home.css">
 </head>
+
 <body class="w-full h-auto">
-    <div class="relative z-10 flex font-trajan justify-between items-center p-5 md:p-8 bg-gradient-to-br from-sky-400 to-sky-600">
+    <div
+        class="relative z-10 flex font-trajan justify-between items-center p-5 md:p-8 bg-gradient-to-br from-sky-400 to-sky-600">
         <!-- Logo -->
         <div>
-            <a href="../Home/index.html" class="cursor-pointer" target="_blank"><img class="w-38 h-12" src="../../assets/logo/v5_33.png"></a>
+            <a href="../Home/index.html" class="cursor-pointer" target="_blank"><img class="w-38 h-12"
+                    src="../../assets/logo/v5_33.png"></a>
         </div>
 
         <!-- Navigation Menu -->
         <div class="flex gap-8 space-x-10 text-xl font-semibold items-center ">
-            <div class="text-black tracking-widest font-medium hover:text-blue-950  "><a href="../Home/index.html">Home</a></div>
+            <div class="text-black tracking-widest font-medium hover:text-blue-950  "><a
+                    href="../Home/index.html">Home</a></div>
             <div class="text-black tracking-widest font-medium hover:text-blue-950 ">Experience</div>
             <div class="text-black tracking-widest font-medium hover:text-blue-950 underline">Plan</div>
             <div class="text-black tracking-widest font-medium  hover:text-blue-950">Trade</div>
@@ -24,18 +29,91 @@
 
         <!-- Search Button -->
         <div class="flex gap-2 cursor-pointer bg-white rounded-full p-1">
-            <input class="w-18 px-2 rounded-l-full " type="text" name="" id="searchbox"  >
-            <img class="w-7 p-1" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" id="searchbtn"  onclick=handleSearchbar()>
+            <input class="w-18 px-2 rounded-l-full " type="text" name="" id="searchbox">
+            <img class="w-7 p-1" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1"
+                id="searchbtn" onclick=handleSearchbar()>
 
             <div class="results-container" id="results"></div>
         </div>
     </div>
 
-    <section class="w-full h-screen flex flex-col font-trajan">
-        <p class="text-6xl">Plans</p>
-        <p class="text-4xl">Plan your trip accordingly</p>
+    <section class="w-full h-screen relative flex font-trajan">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img class="w-full h-full object-cover" src="../../assets/background/places-aspect.jpg" />
+        </div>
+        <div class="relative w-[100%] h-screen text-white shadow  flex flex-col justify-cente items-center p-2 py-10">
+
+            <p class="text-8xl mt-20">Plans</p>
+            <p class="text-4xl">Organize your trip accordingly</p>
+        </div>
+
+    </section>
+
+    <section class="w-full h-screen">
+        <div class="max-w-lg mx-auto my-10 bg-white p-8 rounded-lg shadow-lg">
+            <!-- Form Heading -->
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Plan Your Trip</h2>
+
+            <!-- Travel Planner Form -->
+            <form id="travel-form">
+                <!-- Start Destination -->
+                <div class="mb-4">
+                    <label for="start-destination" class="block text-gray-700 font-semibold mb-2">Start
+                        Destination</label>
+                    <select id="start-destination"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+
+                <!-- End Destination -->
+                <div class="mb-4">
+                    <label for="end-destination" class="block text-gray-700 font-semibold mb-2">End Destination</label>
+                    <select id="end-destination"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+
+                <!-- Trip Days -->
+                <div class="mb-4">
+                    <label for="trip-days" class="block text-gray-700 font-semibold mb-2">Number of Days</label>
+                    <input type="number" id="trip-days" placeholder="Enter number of days"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Trip Start Date -->
+                <div class="mb-4">
+                    <label for="start-date" class="block text-gray-700 font-semibold mb-2">Trip Start Date</label>
+                    <input type="date" id="start-date"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Trip End Date -->
+                <div class="mb-6">
+                    <label for="end-date" class="block text-gray-700 font-semibold mb-2">Trip End Date</label>
+                    <input type="date" id="end-date"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit"
+                        class="bg-blue-500 text-white font-semibold px-6 py-2 rounded-lg shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
+                        Plan My Trip
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="w-full h-screen">
+        <div id="trip-timeline" class="mt-10">
+            <!-- Timeline will be populated by JS -->
+          </div>
     </section>
 
     <script src="../Home/script.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
